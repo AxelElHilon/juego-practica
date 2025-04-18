@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+/* Menú hamburguesa */
+/* Menú hamburguesa */
+#menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+  }
+  
+  /* Las 2 líneas dentro del botón */
+  #menu-toggle div {
+    background-color: #333;
+    height: 4px;
+    width: 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  /* Transformación para la cruz */
+  #menu-toggle.active div:nth-child(1) {
+    transform: rotate(45deg);  /* Gira la primera línea 45 grados */
+  }
+  
+  #menu-toggle.active div:nth-child(2) {
+    transform: rotate(-45deg); /* Gira la segunda línea -45 grados */
+  }
+  
+  /* Menú de navegación */
+  nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    display: none;  /* Por defecto oculto */
+  }
+  
+  /* Mostrar el menú cuando tiene la clase 'active' */
+  nav.active ul {
+    display: block;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  main {
+    text-align: center;
+  }
+  
+  .pregunta {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #evaluar-btn {
+    background-color: #2196f3;
+  }
+  
+  #evaluar-btn:hover {
+    background-color: #1976d2;
+  }
+  
+  #resultado {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  

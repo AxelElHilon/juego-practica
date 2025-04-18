@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Qué hacés hoy?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>¿Qué hacés hoy?</h1>
+    <button id="menu-toggle">
+        <div></div>
+        <div></div>
+      </button>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Historial</a></li>
+          <li><a href="#">Cómo jugar</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </nav>
+      
+  </header>
+
+  <main>
+    <div class="pregunta">
+      <p>¿Tenés hambre?</p>
+      <button onclick="responder('hambre', 'si')">Sí</button>
+      <button onclick="responder('hambre', 'no')">No</button>
+    </div>
+
+    <div class="pregunta">
+      <p>¿Tenés sueño?</p>
+      <button onclick="responder('sueno', 'si')">Sí</button>
+      <button onclick="responder('sueno', 'no')">No</button>
+    </div>
+
+    <div class="pregunta">
+      <p>¿Estás aburrido?</p>
+      <button onclick="responder('aburrido', 'si')">Sí</button>
+      <button onclick="responder('aburrido', 'no')">No</button>
+    </div>
+
+    <button id="evaluar-btn" onclick="evaluar()">Ver qué hacer</button>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
