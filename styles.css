@@ -1,0 +1,56 @@
+ body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .curva {
+      background-color: #434242;
+      width: 150px;
+      height: 40px;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 5px #ffffff;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .curva1 {
+      animation: prueba 2s linear infinite alternate;
+    }
+
+    .curva2 {
+      animation: prueba 2s ease infinite alternate;
+    }
+
+    .curva3 {
+      animation: prueba 2s ease-in infinite alternate;
+    }
+
+    .curva4 {
+      animation: prueba 2s ease-out infinite alternate;
+    }
+
+    .curva5 {
+      animation: prueba 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes prueba {
+      0% {
+        background-color: #434242;
+        width: 150px;
+      }
+      100% {
+        background-color: #ff0000;
+        width: 300px;
+      }
+    }
